@@ -7,6 +7,7 @@ var logger = new winston.Logger({
             level: 'info',
             filename: './logs/all-logs.log',
             handleExceptions: true,
+            humanReadableUnhandledException: true,
             json: false,
             maxsize: 5242880, //5MB
             maxFiles: 5,

@@ -1,0 +1,21 @@
+<div class="container-fluid index-page">
+    <h3>Upload Payloads</h3>
+    <hr class="slim">
+    <div class="table-body">
+        <table>
+            <col width="15%">
+            <col width="40%">
+            <col width="15%">
+            <col width="15%">
+            <tbody>
+                <tr><th>ID</th><th>Payload</th><th>Created On</th><th>Created By</th></tr>
+                <tr ng-repeat="payload in res.uploads">
+                    <td>{{payload._id}}</td>
+                    <td>{{payload.payload}}</td>
+                    <td>{{payload.create_date}}</td>
+                    <td>{{payload.create_by}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

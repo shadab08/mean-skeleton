@@ -7,6 +7,18 @@ clientApp.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'components/home/home.html',
             controller: 'HomePageCtrl'
         })
+        .when('/edf-consumers', {
+            templateUrl: 'components/edf/consumers.html',
+            controller: 'EDFPagesCtrl'
+        })
+        .when('/fmc-uploads', {
+            templateUrl: 'components/fmc/uploads.html',
+            controller: 'FMCPagesCtrl'
+        })
+        .when('/fmc-downloads', {
+            templateUrl: 'components/fmc/downloads.html',
+            controller: 'FMCPagesCtrl'
+        })
         .otherwise({
             redirectTo: '/not-found'
         });
